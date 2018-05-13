@@ -1,7 +1,12 @@
 html {
+  font-family: Helvetica;
   font-size: 18px;
+
+}
+
+body {
   line-height: 1.4;
-  font-family: Helvetica
+  margin: 0 auto;
 }
 
 .container {
@@ -11,8 +16,6 @@ html {
 }
 
 .backgroundtop {
-  display: flex;
-  flex-direction: column;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,20 +53,209 @@ html {
   padding-left: 2rem;
 }
 
-.mottos {
-  display: flex;
-  justify-content: flex-end
+.headermenu h1 {
+  display: none
 }
 
 .motto {
-  display: inline-block;
-  margin: 0 auto;
   background-color: white;
   line-height: 1.2;
   margin-top: 10rem;
+  left: 2rem;
+  float: right;
+  position:relative;
+
 }
 
 .motto h1 {
   font-size: 2rem;
   font-weight: 700;
+  padding-left: 5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-right: 5rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.midmenu{
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  height: 8rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img {
+  width: 5rem;
+}
+
+.delivery img {
+  width: 5rem;
+}
+
+.philappoint {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.philappoints h1{
+  background-color: cadetblue;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+
+
+}
+
+.philappoints p {
+  width: 20rem;
+}
+
+.footer {
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+.copyright {
+  display: flex;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.copyright img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+      max-width: 1024px;
+
+    }
+
+   .backgroundtop {
+     height: 22rem;
+     margin-top: -1rem;
+   }
+
+   .motto {
+     margin-top: 5rem;
+     margin-right: 3rem;
+   }
+
+   .motto h1{
+     font-size: 1.33rem;
+     padding: 1.5rem 4rem;
+   }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  body {
+    max-width: 470px;
+  }
+
+  .backgroundtop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .logotitle img {
+    padding-bottom: 1rem;
+  }
+
+  .logotitle p {
+    display: none;
+  }
+
+  .headermenu p{
+    display: none;
+  }
+
+  .headermenu h1{
+    display: flex;
+    padding-top: 1rem;
+    position:relative;
+  }
+
+
+  .midmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center horizontal;
+    margin: 3.77rem 0;
+  }
+
+  .midmenu p {
+    font-size: .77rem;
+    padding-top: 01rem;
+  }
+
+  .fittings {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.54rem;
+  }
+
+
+  .delivery {
+    display: flex;
+    justify-content: center;
+  }
+
+  .philappoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .philappoints h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright p {
+    display: none;
+  }
+
+
+
+
 }
